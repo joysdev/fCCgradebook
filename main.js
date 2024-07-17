@@ -12,8 +12,7 @@ function getGrade(score) {
     if (score === 100) {
         result = 'A++';
     }
-    else 
-        if (90 <= score < 100) {
+    if (90 <= score < 100) {
             result = 'A';
         }
         else 
