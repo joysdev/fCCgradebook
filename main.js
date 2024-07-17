@@ -10,33 +10,76 @@ if variable < 60, then return F */
 
 function getGrade(score) {
     /* if (score === 100) {
-        console.log('A++');
+        console.log("A++");
     } */
-    if (90 <= score < 100) {
-            console.log('A');
-        }
-        else 
-        if (90 <= score < 100) {
-    console.log('A');
+    
+    if (score < 100 && score >= 90) {
+    console.log("A");
         }
         /*else 
-        if (80 <= score < 90) {
-    console.log('B');
+        if (score >= 80 && score <= 90) {
+    console.log("B");
         }
         else 
-        if (70 <= score < 80) {
-    console.log('C');
+        if (score >= 70 && score <= 80) {
+    console.log("C");
         }
         else 
-        if (60 <= score < 90) {
-    console.log('D');
+        if (score >= 60 && score <= 70) {
+    console.log("D");
         } */
         //else 
-        if (score < 60) {
-    console.log('F');
+        if (score <= 60) {
+    console.log("F");
         }
 }
 
 console.log(getGrade(96));
 console.log(getGrade(82));
 console.log(getGrade(56));
+
+// Back to drawing-board 1
+
+if (score === 100) {
+    console.log("A++");
+}
+
+if (90 < score < 100) {
+    console.log("A");
+}
+/* Still getting undefineds. I suspect I need to declare score but I have no idea exactly how or even how to ask the question... Getting frustrated enough to be tempted to look up the solution
+
+tried putting all the grades in my function parentheses, nope. Separated by a semi-colon, nope. I suspect I need to define score, but all the ways I have tried are not doing it. */
+
+/* Another try */
+
+
+function getGrade(score) {
+    if (score === 100) {
+        console.log("A++");
+    }
+    else
+    if (score < 100 && score >= 90) {
+    console.log("A");       
+}   else
+    if (score >= 80 && score <= 90) {
+    console.log("B");
+        }
+    else
+    if (score >= 70 && score <= 80) {
+    console.log("C");
+        }
+    else 
+    if (score >= 60 && score <= 70) {
+    console.log("D");
+        }
+    if (score <= 60) {
+    console.log("F");
+        }
+
+}
+
+console.log(getGrade(96));
+console.log(getGrade(82));
+console.log(getGrade(56));
+/* Still doesn't pass. I get the results for the three grades, but Undefineds in between, and my code does not pass the test */
