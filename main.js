@@ -96,4 +96,32 @@ function hasPassingGrade(score) {
       }
   }
 
-  /*Does not pass even though it returns the right values... Removed "" to make it Boolean and passes!!!""
+  /*Does not pass even though it returns the right values... Removed "" to make it Boolean and passes!!!""*/
+
+  //Step 4
+
+  function studentMsg(totalScores, studentScore) {
+    if (hasPassingGrade) {
+      return "Class average: " + getAverage + ". Your grade: " + getGrade + ". You passed the course."
+    }
+    else {
+      return "Class average: " + getAverage + ". Your grade: " + getGrade + ". You failed the course."
+    }
+  
+  }
+  console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
+
+  // Does not pass-I suspect spacing issues and missing input
+
+  function studentMsg(totalScores, studentScore) {
+    if (hasPassingGrade(studentScore)) {
+      return "Class average: " + getAverage(totalScores) + ". Your grade: " + getGrade(studentScore) + ". You passed the course."
+    }
+    else {
+      return "Class average: " + getAverage(totalScores) + ". Your grade: " + getGrade(studentScore) + ". You failed the course."
+    }
+  
+  }
+  console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
+
+  /*returns: Class average: 71.7. Your grade: F. You passed the course. So no spacing issues, but this is wrong-looks like it is averaging all? Add studentScore to if function and it passes but I get the same return so I'm confused? Ok I see it is saying failed now. And it is only returning one message for the very last number (37)*/
