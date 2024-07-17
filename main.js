@@ -10,29 +10,33 @@ if variable < 60, then return F */
 
 function getGrade(score) {
     if (score === 100) {
-        result = 'A++';
+        console.log('A++');
     }
     if (90 <= score < 100) {
-            result = 'A';
+            console.log('A');
         }
         else 
         if (90 <= score < 100) {
-    result = 'A';
+    console.log('A');
         }
         else 
         if (80 <= score < 90) {
-    result = 'B';
+    console.log('B');
         }
         else 
         if (70 <= score < 80) {
-    result = 'C';
+    console.log('C');
         }
         else 
         if (60 <= score < 90) {
-    result = 'D';
+    console.log('D');
         }
         else 
         if (score < 60) {
-    result = 'F';
+    console.log('F');
         }
 }
+
+console.log(getGrade(96));
+console.log(getGrade(82));
+console.log(getGrade(56));
