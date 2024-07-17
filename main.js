@@ -56,25 +56,26 @@ tried putting all the grades in my function parentheses, nope. Separated by a se
 
 function getGrade(score) {
     if (score === 100) {
-        console.log("A++");
+        return("A++");
     }
     else
     if (score < 100 && score >= 90) {
-    console.log("A");       
+        return("A");       
 }   else
     if (score >= 80 && score <= 90) {
-    console.log("B");
+        return("B");
         }
     else
     if (score >= 70 && score <= 80) {
-    console.log("C");
+        return("C");
         }
     else 
     if (score >= 60 && score <= 70) {
-    console.log("D");
+        return("D");
         }
+    else
     if (score <= 60) {
-    console.log("F");
+        return("F");
         }
 
 }
