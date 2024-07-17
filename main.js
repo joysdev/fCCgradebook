@@ -83,4 +83,17 @@ function getGrade(score) {
 console.log(getGrade(96));
 console.log(getGrade(82));
 console.log(getGrade(56));
-/* Still doesn't pass. I get the results for the three grades, but Undefineds in between, and my code does not pass the test */
+/* Still doesn't pass. I get the results for the three grades, but Undefineds in between, and my code does not pass the test. Changed console.log() to return and passes!!! */
+
+// Step 3
+
+function hasPassingGrade(score) {
+    if (score >= 60) {
+      return true;
+    }
+      else {
+      return false;
+      }
+  }
+
+  /*Does not pass even though it returns the right values... Removed "" to make it Boolean and passes!!!""
